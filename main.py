@@ -6,5 +6,5 @@ engine = create_engine('mysql+pymysql://root:root@localhost/books')
 
 explicit_ratings = pd.read_sql('SELECT * FROM explicit_ratings', engine)
 
-recommend(276747, 5, explicit_ratings)
+recommend(276747, explicit_ratings)
 
